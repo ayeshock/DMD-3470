@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Mode Midterm</title>
+
+  <style>
+    button {
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      padding: 20px;
+      background-color: lavender;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    p {
+      max-width: 700px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+    }
+
+    .light-box {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+    }
+
+    .dark-box {
+      background-color: #121212;
+      color: white;
+      padding: 20px;
+      border: 1px solid #333;
+    }
+
+    /* Dark Mode */
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    .dark-mode section {
+      background-color: #1e1e1e;
+    }
+
+    .dark-mode .light-box {
+      background-color: #2a2a2a;
+      color: white;
+      border: 1px solid #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Dark Mode</h1>
+
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <section>
+    <h2>What is Dark Mode?</h2>
+    <p>
+      Dark mode is a design style that uses dark backgrounds with light-colored text instead of the traditional white background. It is commonly used in apps, websites, and devices.
+    </p>
+  </section>
+
+  <section>
+    <h2>Why Dark Mode Is Important</h2>
+    <p>
+      Dark mode can make screens feel less harsh in low-light environments and may improve visual comfort for users. It also looks modern and is preferred by many users for its clean appearance.
+    </p>
+  </section>
+
+  <section>
+    <h2>Real-World Use Case</h2>
+    <p>
+      Dark mode is used in many popular applications such as YouTube, Instagram, X, and Discord. Many users browse these apps at night, so dark mode reduces brightness and makes content easier to view. It also allows users to customize their experience based on their preferences.
+    </p>
+  </section>
+
+  <section>
+    <h2>How Dark Mode Works in CSS</h2>
+    <p>
+      Dark mode is created by changing background and text colors using CSS. Developers can define a set of styles for light mode and another set for dark mode using a class. When the class is applied, the appearance of the page changes.
+    </p>
+  </section>
+
+  <section>
+    <h2>How to Code Dark Mode</h2>
+    <p>
+      To create this project, I first built the structure of the page using HTML, including headings, paragraphs, and sections. Then I used CSS to style the layout, including background colors, spacing, and borders.
+    </p>
+    <p>
+      I created separate styles for light mode and dark mode using CSS classes. Finally, I used a small JavaScript function that toggles a class on the body element when the button is clicked. This allows the user to switch between light and dark mode.
+    </p>
+  </section>
+
+  <section>
+    <h2>Light Mode Example</h2>
+    <div class="light-box">
+      <p>This is light mode.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dark Mode Example</h2>
+    <div class="dark-box">
+      <p>This is dark mode.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Browser Support</h2>
+    <p>
+      This project works in all modern browsers including Google Chrome, Safari, Microsoft Edge, and Firefox. Since it uses basic HTML, CSS, and JavaScript, no polyfills are required. If JavaScript is disabled, the page will still display in light mode as a fallback.
+    </p>
+  </section>
+
+  <section>
+    <h2>Citations / Resources</h2>
+    <p>
+      Resources used include class materials, W3Schools, and YouTube tutorials. These sources helped with understanding CSS styling, layout techniques, and JavaScript functions for toggling buttons which I used to make the dark mode button to switch the website from light to dark mode.
+    </p>
+  </section>
+
+  <section>
+    <h2>Conclusion</h2>
+    <p>
+      Dark mode is an important feature in modern web design. It improves user comfort, enhances visual design, and provides flexibility for users. This project demonstrates how dark mode can be implemented using HTML, CSS, and JavaScript.
+    </p>
+  </section>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+</html>
