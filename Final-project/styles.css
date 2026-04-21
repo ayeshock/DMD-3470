@@ -1,16 +1,16 @@
-/* RESET */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* BODY */
+/* Body */
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* NAVBAR */
+/* Navigation bar */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@ body {
   font-weight: 600;
 }
 
-/* NAV LINKS */
+/* Navigation Links */
 .nav-links {
   display: flex;
   gap: 1rem;
