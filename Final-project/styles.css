@@ -84,6 +84,29 @@
   max-width: 100%;
 }
 
+/* Info Section */
+.info-section {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.info-image img {
+  max-width: 100%;
+}
+
+.info-text a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: purple;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 /* Bigger screens */
 @media (min-width: 768px) {
   .hero {
@@ -116,6 +139,17 @@
 
   .how-text,
   .how-image {
+    width: 50%;
+  }
+
+  .info-section {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .info-image,
+  .info-text {
     width: 50%;
   }
 }
