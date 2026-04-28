@@ -1,35 +1,121 @@
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Body */
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Navigation bar */
-.nav {
+/* Hero */
+.hero {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  text-align: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+  background: linear-gradient(to right, purple, blue);
+  color: white;
 }
 
-.logo {
-  font-weight: 600;
+.hero-text {
+  max-width: 500px;
 }
 
-/* Navigation Links */
-.nav-links {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
+.hero-text p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
-.nav-links a {
+.hero a {
   text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+.hero a:first-of-type {
+  background: white;
   color: black;
+}
+
+.hero a:last-of-type {
+  border: 1px solid white;
+  color: white;
+}
+
+.hero img {
+  max-width: 100%;
+}
+
+/* Features */
+.features {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 0.5rem;
+}
+
+.features-desc {
+  margin-bottom: 2rem;
+  color: gray;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature-box {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* How It Works */
+.how-it-works {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.step {
+  margin-bottom: 1.5rem;
+}
+
+.how-image img {
+  max-width: 100%;
+}
+
+/* Bigger screens */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 4rem 2rem;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 50%;
+  }
+
+  .feature-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feature-box {
+    width: 30%;
+  }
+
+  .how-it-works {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .how-text,
+  .how-image {
+    width: 50%;
+  }
 }
