@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Appine app landing page recreated for DMD 3470 final project.">
   <title>Appine Landing Page</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
 <header class="site-header">
-  <nav class="nav">
-    <a href="#home" class="logo">
-      <img src="images/Final Project Images/logo.png" alt="Appine logo">
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#home" class="logo" aria-label="Appine home">
+      <img src="images/Final Project Images/logo.png" alt="Appine logo" width="108" height="28">
     </a>
 
     <ul class="nav-links">
@@ -28,260 +30,219 @@
 </header>
 
 <main>
-
-  <!-- HERO -->
   <section id="home" class="hero">
-    <img class="hero-shapes" src="images/Final Project Images/hero-bg.png" alt="Decorative shapes">
+    <img class="hero-shapes" src="images/Final Project Images/hero-bg.png" alt="" aria-hidden="true">
 
     <div class="hero-text">
       <p class="small-text">Jupiter X Lite</p>
-
       <h1>Awesome App for Your Modern <span>Lifestyle</span></h1>
-
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard.
-      </p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
 
       <div class="hero-buttons">
         <a href="#">Download App</a>
-        <a href="#">Discover More</a>
+        <a href="#features">Discover More</a>
       </div>
     </div>
 
     <div class="hero-image">
       <picture>
         <source srcset="images/Final Project Images/hero-img.png" media="(min-width: 768px)">
-        <img src="images/Final Project Images/hero-img.png" alt="App preview">
+        <img src="images/Final Project Images/hero-img.png" alt="App preview on phone" width="520" height="650">
       </picture>
     </div>
   </section>
 
-  <!-- FEATURES -->
   <section id="features" class="features">
     <h2>Awesome Apps Features</h2>
-
-    <p class="features-desc">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the.
-    </p>
+    <p class="features-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
 
     <div class="feature-container">
-      <div class="feature-box">
-        <img src="images/Final Project Images/features-icon-1.png" alt="Design icon" loading="lazy">
-        <h3>Design & Branding</h3>
+      <article class="feature-box">
+        <img src="images/Final Project Images/features-icon-1.png" alt="Design icon" loading="lazy" width="65" height="65">
+        <h3>Design &amp; Branding</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-      </div>
+      </article>
 
-      <div class="feature-box">
-        <img src="images/Final Project Images/features-icon-2.png" alt="Security icon" loading="lazy">
+      <article class="feature-box">
+        <img src="images/Final Project Images/features-icon-2.png" alt="Security icon" loading="lazy" width="65" height="65">
         <h3>Fully Secured</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-      </div>
+      </article>
 
-      <div class="feature-box">
-        <img src="images/Final Project Images/features-icon-3.png" alt="Edit icon" loading="lazy">
+      <article class="feature-box">
+        <img src="images/Final Project Images/features-icon-3.png" alt="Edit icon" loading="lazy" width="65" height="65">
         <h3>Easy to Edit</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="how" class="how-it-works">
+    <div class="how-content">
+      <div class="how-text">
+        <h2>How does this App Work?</h2>
+
+        <article class="step">
+          <img src="images/Final Project Images/image (4).svg" alt="Profile icon" loading="lazy" width="95" height="95">
+          <div>
+            <h3>Make a Profile</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <img src="images/Final Project Images/image (5).svg" alt="Download icon" loading="lazy" width="95" height="95">
+          <div>
+            <h3>Download it for free</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <img src="images/Final Project Images/image (6).svg" alt="Enjoy app icon" loading="lazy" width="95" height="95">
+          <div>
+            <h3>Enjoy this App</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+          </div>
+        </article>
+
+        <div class="store-buttons">
+          <img src="images/Final Project Images/app-store-img.png" alt="Download on the App Store" loading="lazy" width="170" height="58">
+          <img src="images/Final Project Images/google-play-img.png" alt="Get it on Google Play" loading="lazy" width="170" height="58">
+        </div>
+      </div>
+
+      <div class="how-image">
+        <img class="circle-bg" src="images/Final Project Images/app-work-bg.png" alt="" aria-hidden="true" loading="lazy">
+        <picture>
+          <source srcset="images/Final Project Images/app-work-img-2.png" media="(min-width: 768px)">
+          <img class="phone-img" src="images/Final Project Images/app-work-img-2.png" alt="Phone showing app workflow" loading="lazy" width="430" height="620">
+        </picture>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section id="how" class="how-it-works">
-
-  <div class="how-content">
-
-    <div class="how-text">
-      <h2>How does this App Work?</h2>
-
-      <div class="step">
-        <img src="images/Final Project Images/image (4).svg" alt="">
-        <div>
-          <h3>Make a Profile</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <img src="images/Final Project Images/image (5).svg" alt="">
-        <div>
-          <h3>Download it for free</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <img src="images/Final Project Images/image (6).svg" alt="">
-        <div>
-          <h3>Enjoy this App</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-        </div>
-      </div>
-
-      <div class="store-buttons">
-        <img src="images/Final Project Images/app-store-img.png" alt="">
-        <img src="images/Final Project Images/google-play-img.png" alt="">
-      </div>
-    </div>
-
-    <div class="how-image">
-      <img class="circle-bg" src="images/Final Project Images/app-work-bg.png" alt="">
-      <img class="phone-img" src="images/Final Project Images/app-work-img-2.png" alt="">
-    </div>
-
-  </div>
-
-</section>
-
-  <!-- INFO -->
   <section class="info-section">
-  <div class="info-image">
-    <img class="info-bg" src="images/Final Project Images/app-work-bg.png" alt="">
-    <img class="info-phone" src="images/Final Project Images/easy-to-manage-img-2.png" alt="App data screen">
-  </div>
-
-  <div class="info-text">
-    <img class="info-icon" src="images/Final Project Images/easy-to-manage-icon.png" alt="Icon">
-    <h2>Easy to Manage Your All Data by This App</h2>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text.
-    </p>
-    <a href="#">Read More</a>
-  </div>
-</section>
-
-<section class="responsive-section">
-  <div class="responsive-text">
-    <h2>Responsive Design for All Devices with Quality</h2>
-
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text.
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    </p>
-
-    <a href="#">Read More</a>
-  </div>
-
-  <div class="responsive-image">
-    <img class="responsive-bg" src="images/Final Project Images/app-work-bg.png" alt="">
-    <img class="responsive-phone" src="images/Final Project Images/responsive-design-img-2.png" alt="Responsive app screen">
-  </div>
-</section>
-
-<section class="video-section">
-  <div class="video-overlay"></div>
-
-  <img src="images/Final Project Images/watch-tutorial-img.jpg" class="video-bg" alt="Tutorial">
-
-  <div class="video-content">
-    <h2>Watch a Quick Tutorial</h2>
-
-    <div class="play-button">
-      ▶
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="pricing-section">
-  <h2>Choose your plan</h2>
-
-  <div class="pricing-container">
-
-    <!-- STARTER -->
-    <div class="pricing-card">
-      <img class="card-shape" src="images/image (2).svg" alt="">
-
-      <p class="plan">STARTER</p>
-      <h3>Free</h3>
-      <span>Per Month, Billed Annually</span>
-
-      <ul>
-        <li>✔ Access Free Courses</li>
-        <li>✔ Download Up To 5 Courses</li>
-        <li class="disabled">✖ Get Teacher's Feedback</li>
-        <li class="disabled">✖ Write Reviews</li>
-        <li class="disabled">✖ 24/7 Customer Support</li>
-      </ul>
-
-      <a href="#">Start Now</a>
+    <div class="info-image">
+      <img class="info-bg" src="images/Final Project Images/app-work-bg.png" alt="" aria-hidden="true" loading="lazy">
+      <picture>
+        <source srcset="images/Final Project Images/easy-to-manage-img-2.png" media="(min-width: 768px)">
+        <img class="info-phone" src="images/Final Project Images/easy-to-manage-img-2.png" alt="App data screen" loading="lazy" width="420" height="610">
+      </picture>
     </div>
 
-    <!-- PREMIUM -->
-    <div class="pricing-card">
-      <img class="card-shape" src="images/image (2).svg" alt="">
+    <div class="info-text">
+      <img class="info-icon" src="images/Final Project Images/easy-to-manage-icon.png" alt="Data management icon" loading="lazy" width="45" height="45">
+      <h2>Easy to Manage Your All Data by This App</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+      <a href="#">Read More</a>
+    </div>
+  </section>
 
-      <p class="plan">PREMIUM</p>
-      <h3>$2.00</h3>
-      <span>Per Month, Billed Annually</span>
-
-      <ul>
-        <li>✔ Access Free Courses</li>
-        <li>✔ Download Up To 5 Courses</li>
-        <li>✔ Get Teacher's Feedback</li>
-        <li class="disabled">✖ Write Reviews</li>
-        <li class="disabled">✖ 24/7 Customer Support</li>
-      </ul>
-
-      <a href="#">Start Now</a>
+  <section class="responsive-section">
+    <div class="responsive-text">
+      <h2>Responsive Design for All Devices with Quality</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a href="#">Read More</a>
     </div>
 
-    <!-- PRO -->
-    <div class="pricing-card">
-      <img class="card-shape" src="images/image (2).svg" alt="">
-
-      <p class="plan">PRO</p>
-      <h3>$7.00</h3>
-      <span>Per Month, Billed Annually</span>
-
-      <ul>
-        <li>✔ Access Free Courses</li>
-        <li>✔ Download Up To 5 Courses</li>
-        <li>✔ Get Teacher's Feedback</li>
-        <li>✔ Write Reviews</li>
-        <li>✔ 24/7 Customer Support</li>
-      </ul>
-
-      <a href="#">Start Now</a>
+    <div class="responsive-image">
+      <img class="responsive-bg" src="images/Final Project Images/app-work-bg.png" alt="" aria-hidden="true" loading="lazy">
+      <picture>
+        <source srcset="images/Final Project Images/responsive-design-img-2.png" media="(min-width: 768px)">
+        <img class="responsive-phone" src="images/Final Project Images/responsive-design-img-2.png" alt="Responsive app screen" loading="lazy" width="380" height="550">
+      </picture>
     </div>
+  </section>
 
-  </div>
-</section>
+  <section class="video-section">
+    <div class="video-overlay"></div>
+    <picture>
+      <source srcset="images/Final Project Images/watch-tutorial-img.jpg" media="(min-width: 768px)">
+      <img src="images/Final Project Images/watch-tutorial-img.jpg" class="video-bg" alt="Tutorial preview" loading="lazy">
+    </picture>
 
-  <!-- REVIEW -->
-<section id="review" class="review-section">
-  <h2>User Review</h2>
+    <div class="video-content">
+      <h2>Watch a Quick Tutorial</h2>
+      <button class="play-button" type="button" aria-label="Play video">▶</button>
+    </div>
+  </section>
 
-  <div class="review-box">
-<img class="review-img" src="images/Final Project Images/review-img.png" alt="User review photo">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-      gravida. Risus commodo viverra.
-    </p>
+  <section id="pricing" class="pricing-section">
+    <h2>Choose your plan</h2>
 
-    <h4>- Michel Strac</h4>
-  </div>
-</section>
+    <div class="pricing-container">
+      <article class="pricing-card">
+        <img class="card-shape" src="images/Final Project Images/image (2).svg" alt="" aria-hidden="true" loading="lazy">
+        <p class="plan">STARTER</p>
+        <h3>Free</h3>
+        <span>Per Month, Billed Annually</span>
+        <ul>
+          <li>✔ Access Free Courses</li>
+          <li>✔ Download Up To 5 Courses</li>
+          <li class="disabled">✖ Get Teacher's Feedback</li>
+          <li class="disabled">✖ Write Reviews</li>
+          <li class="disabled">✖ 24/7 Customer Support</li>
+        </ul>
+        <a href="#">Start Now</a>
+      </article>
+
+      <article class="pricing-card">
+        <img class="card-shape" src="images/Final Project Images/image (2).svg" alt="" aria-hidden="true" loading="lazy">
+        <p class="plan">PREMIUM</p>
+        <h3>$2.00</h3>
+        <span>Per Month, Billed Annually</span>
+        <ul>
+          <li>✔ Access Free Courses</li>
+          <li>✔ Download Up To 5 Courses</li>
+          <li>✔ Get Teacher's Feedback</li>
+          <li class="disabled">✖ Write Reviews</li>
+          <li class="disabled">✖ 24/7 Customer Support</li>
+        </ul>
+        <a href="#">Start Now</a>
+      </article>
+
+      <article class="pricing-card">
+        <img class="card-shape" src="images/Final Project Images/image (2).svg" alt="" aria-hidden="true" loading="lazy">
+        <p class="plan">PRO</p>
+        <h3>$7.00</h3>
+        <span>Per Month, Billed Annually</span>
+        <ul>
+          <li>✔ Access Free Courses</li>
+          <li>✔ Download Up To 5 Courses</li>
+          <li>✔ Get Teacher's Feedback</li>
+          <li>✔ Write Reviews</li>
+          <li>✔ 24/7 Customer Support</li>
+        </ul>
+        <a href="#">Start Now</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="review" class="review-section">
+    <h2>User Review</h2>
+    <div class="review-box">
+      <picture>
+        <source srcset="images/Final Project Images/review-img.png" media="(min-width: 768px)">
+        <img class="review-img" src="images/Final Project Images/review-img.png" alt="User review photo" loading="lazy" width="80" height="80">
+      </picture>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra.</p>
+      <h3>- Michel Strac</h3>
+    </div>
+  </section>
 </main>
 
-<section class="cta-section">
+<footer class="cta-section">
   <div class="cta-content">
     <h2>Let’s start using today</h2>
-
     <div class="store-buttons">
-      <img src="images/Final Project Images/app-store-img-footer.png" alt="App Store">
-      <img src="images/Final Project Images/google-play-img-footer.png" alt="Google Play">
+      <img src="images/Final Project Images/app-store-img-footer.png" alt="Download on the App Store" loading="lazy" width="180" height="62">
+      <img src="images/Final Project Images/google-play-img-footer.png" alt="Get it on Google Play" loading="lazy" width="180" height="62">
     </div>
-
-    <p class="copyright">
-Copyright © 2020 Artbees Ltd. JupiterX Lite WordPress Theme Demo All rights reserved.    </p>
+    <p class="copyright">Copyright © 2020 Artbees Ltd. JupiterX Lite WordPress Theme Demo All rights reserved.</p>
   </div>
-</section>
+</footer>
 
-<script src="scripts.js"></script>
+<script src="scripts.js" defer></script>
 </body>
 </html>
