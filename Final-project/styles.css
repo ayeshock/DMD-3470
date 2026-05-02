@@ -250,7 +250,7 @@ img {
   z-index: 2;
 }
 
-/* INFO SECTION */
+/* INFO */
 .info-section {
   display: flex;
   justify-content: space-between;
@@ -389,7 +389,7 @@ img {
   object-fit: cover;
 }
 
-/* purple overlay */
+
 .video-overlay {
   position: absolute;
   width: 100%;
@@ -416,7 +416,6 @@ img {
   margin-bottom: 20px;
 }
 
-/* PLAY BUTTON */
 .play-button {
   width: 70px;
   height: 70px;
@@ -437,7 +436,6 @@ img {
 }
 
 /* PRICING */
-/* PRICING SECTION */
 .pricing-section {
   text-align: center;
   padding: 80px 10%;
@@ -467,7 +465,6 @@ img {
   overflow: hidden;
 }
 
-/* SVG SHAPE */
 .card-shape {
   position: absolute;
   top: 0;
@@ -476,7 +473,6 @@ img {
   z-index: 0;
 }
 
-/* TEXT ABOVE SHAPE */
 .pricing-card * {
   position: relative;
   z-index: 2;
