@@ -1,0 +1,167 @@
+/* ============================================
+   CSS GRID HOLY GRAIL LAYOUT ASSIGNMENT
+   ============================================
+   
+   REQUIREMENTS:
+   - Use CSS Grid to create the Holy Grail layout
+   - Mobile-first responsive design
+   - Single grid container (body element)
+   - Mobile stacking order: Header, Menu, Content, Ad, Footer
+   - Desktop layout: Header top, Menu left, Content center, Ad right, Footer bottom
+   - Use different background colors for each section
+   - Do NOT modify the HTML file
+   - Do NOT use height or min-height on grid rows
+   ============================================ */
+
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* TODO: Add any additional reset or base styles here */
+
+
+/* ============================================
+   MOBILE-FIRST GRID LAYOUT (DEFAULT)
+   ============================================
+   
+   Set up the body as a grid container.
+   Create a single-column mobile layout.
+   Use grid-template-areas to define the stacking order:
+   Header, Menu, Content, Ad, Footer
+   ============================================ */
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "menu"
+        "content"
+        "ad"
+        "footer";
+    grid-template-rows: auto auto 1fr auto auto;
+}
+
+/* TODO: Assign each section to its grid area using grid-area property */
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: menu;
+}
+
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: ad;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* ============================================
+   SECTION STYLING & BACKGROUND COLORS
+   ============================================
+   
+   Add different background colors to distinguish each section.
+   Add padding and other styling as needed.
+   ============================================ */
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 1rem;
+}
+
+header {
+    background-color: lightblue;
+}
+
+nav {
+    background-color: lightgreen;
+}
+
+main {
+    background-color: white;
+}
+
+aside {
+    background-color: lightyellow;
+}
+
+footer {
+    background-color: lightcoral;
+}
+
+
+/* ============================================
+   BUTTON STYLING
+   ============================================ */
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* ============================================
+   RESPONSIVE DESIGN - DESKTOP LAYOUT
+   ============================================
+   
+   Use a media query for larger screens (e.g., min-width: 768px)
+   Reconfigure the grid for the classic Holy Grail layout:
+   - Header spans full width at top
+   - Menu (nav) in left sidebar
+   - Content (main) in center
+   - Ad (aside) in right sidebar
+   - Footer spans full width at bottom
+   ============================================ */
+
+/* TODO: Add media query for desktop breakpoint */
+/* Example: @media (min-width: 768px) { ... } */
+
+    /* TODO: Redefine grid-template-columns for desktop (3 columns recommended) */
+    @media (min-width: 768px) {
+    body {
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header header"
+            "menu content ad"
+            "footer footer footer";
+    }
+}
+    
+    /* TODO: Redefine grid-template-areas for desktop Holy Grail layout */
+    
+    /* TODO: Redefine grid-template-rows if needed */
